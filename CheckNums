@@ -32,7 +32,7 @@
       return "-1";
   }
          
-}
+  }
    
-// keep this function call here 
-CheckNums(readline());     
+  // keep this function call here 
+  CheckNums(readline());     
