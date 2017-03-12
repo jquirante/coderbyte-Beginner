@@ -1,0 +1,27 @@
+/***************************************************************************************
+*                                                                                      *
+*                  CODERBYTE BEGINNER CHALLENGE                                        *
+*                                                                                      *
+*  Alphabet Soup                                                                       *
+*  Have the function AlphabetSoup(str) take the str string parameter being passed      *
+*  and return the string with the letters in alphabetical order                        *
+*  (ie. hello becomes ehllo). Assume numbers and punctuation symbols will not be       *
+*  included in the string.                                                             *
+*                                                                                      *
+*  SOLUTION                                                                            *
+*  1) Split the string up into an array                                                *
+*  2) Sort the array using .sort()                                                     *
+*  3) Rejoin and return the string                                                     *
+*                                                                                      *
+***************************************************************************************/
+
+// Experimented with adding spaces in between the (""). Seems like no spaces will split each letter while one space will split words into an array. Same principles with join ("")
+
+function AlphabetSoup(str) { 
+
+  var newString = str.split("").sort().join("");
+  return newString;       
+}
+
+  // keep this function call here 
+AlphabetSoup(readline());
