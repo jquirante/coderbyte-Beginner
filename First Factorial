@@ -1,0 +1,33 @@
+/***************************************************************************************
+*                                                                                      *
+*                  CODERBYTE BEGINNER CHALLENGE                                        *
+*                                                                                      *
+*  First Factorial                                                                     *
+*  Using the JavaScript language, have the function FirstFactorial(num) take the num   *
+*  parameter being passed and return the factorial of it (ie. if num = 4,              *
+*  return (4 * 3 * 2 * 1)). For the test cases, the range will be between 1 and 18.    *                                                     *
+*                                                                                      *
+*  SOLUTION                                                                            *
+*  1) Use a for loop to start at 1 and multiply by the next integer until you reach the*
+*  number that was entered                                                             *
+*                                                                                      *
+*  Note: The result variable needs to sit outside the for loop otherwise the total will*
+*  reset to that value every time the for loop runs. Another thing to keep in mind is  *
+*  to account for weird values like 0 and 1. If the result starts at 0 and the number  *
+*  entered was 1, then you will get the wrong factorial value since the loop will do   *
+*  1 x 0. Therefore, you must set the starting result variable to 1.                   *
+***************************************************************************************/
+
+
+function FirstFactorial(num) { 
+
+    var result = 1;
+    for (var i = 2; i <= num;i++) {
+        
+        result *= i;
+    }
+    
+    return result;
+}
+// keep this function call here 
+FirstFactorial(readline());
