@@ -1,0 +1,28 @@
+//////////////////////
+
+CHALLENGE
+
+Using the JavaScript language, have the function LongestWord(sen) take the sen 
+parameter being passed and return the largest word in the string. If there are 
+two or more words that are the same length, return the first word from the 
+string with that length. Ignore punctuation and assume sen will not be empty. 
+
+***********************
+
+SOLUTION
+
+1. Split string into an array and replace punctuation with a blank
+2. Sort the array by descending order of length
+3. Shift the first word of the array for the solution
+
+************************
+
+function LongestWord(sen) {
+
+  var newArray = sen.replace(/[*a-zA-Z]/g, "")split(" ");
+  newArray.sort(zero, one) { return one.length - zero.length; }
+  return newArray.shift();
+  
+  }
+  
+}
