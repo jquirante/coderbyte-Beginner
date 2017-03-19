@@ -18,8 +18,8 @@ SOLUTION
 ************************
 
 function LongestWord(sen) {
-
-  var newArray = sen.replace(/[*a-zA-Z]/g, "")split(" ");
+  //The ^ symbol in the regex will look for any character not in the designated group which is how we identify the punctuation
+  var newArray = sen.replace(/[^a-zA-Z]/g, "")split(" ");
   newArray.sort(zero, one) { return one.length - zero.length; }
   return newArray.shift();
   
